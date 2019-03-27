@@ -12,8 +12,8 @@
 		$firstNameFld = $("#firstNameFld");
 		$lastNameFld = $("#lastNameFld");
 		$passwordFld = $("#passwordFld1");
-		$usernameFld.val("LOL");
-		$passwordFld.val("Dont");
+		$usernameFld.val("USERNAME");
+		$passwordFld.val("PASSWORD");   
 		$userRowTemplate = $(".webdev-template");
 	//	$userRowTemplate.hide();
 	//	var row;
