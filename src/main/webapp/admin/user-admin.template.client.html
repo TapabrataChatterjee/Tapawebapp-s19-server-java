@@ -1,4 +1,13 @@
 <html>
+<head>
+<title>User Admin</title>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<script src = "../services/user.service.client.js"></script>
+<script src ="user-admin.component.client.js"></script>
+
+<body>
 <table border = "2">
 <thead>
 <tr>
@@ -12,14 +21,14 @@
 </tr>
 <tr>
    <th>
-       <input placeholder = "username"/>
+       <input id="usernameFld" class="userId" placeholder = "username"/>
    </th>
-   <th> <input placeholder = "password"/>
+   <th> <input id = "passwordFld1" class="passWord" placeholder = "password"/>
    </th>
    <th>
-       <input placeholder = "firstname"/>
+       <input id="firstNameFld" class = "firstName" placeholder = "firstname"/>
    </th>
-   <th> <input placeholder = "lastname"/>
+   <th> <input id="lastNameFld" class = "lastName" placeholder = "lastname"/>
    </th>
    <th>
    <select>
@@ -32,38 +41,23 @@
    <th><input type="date"/>
    </th>
    <th><button>Update</button> 
-       <button>Create</button>
+       <button id = "createBtn">Create</button>
    </th>
   </tr>
-  <tr>
-    <td>Rishi</td>
-    <td>********</td>
-    <td>Shourya</td>
-    <td>Chatterjee</td>
+  <tr class = "webdev-template">
+    <td class = "user">Rishi</td>
+    <td class = "pwd">********</td>
+    <td class = "firstname">Shourya</td>
+    <td class = "lastname">Chatterjee</td>
     <td>Faculty</td>
     <td>07/07/2012</td>
-    <td><Button>Delete</Button>
-        <Button>Edit</Button></td></tr>
-   <tr>
-    <td>Neil</td>
-    <td>********</td>
-    <td>Neil</td>
-    <td>Chatterjee</td>
-    <td>Admin</td>
-    <td>12/10/2018</td>
-    <td><Button>Delete</Button>
-        <Button>Edit</Button></td></tr>
-   <tr>
-    <td>Tap</td>
-    <td>********</td>
-    <td>Tapa</td>
-    <td>Chatterjee</td>
-    <td>Looser</td>
-    <td>07/07/2012</td>
-    <td><Button>Delete</Button>
-        <Button>Edit</Button></td></tr>
+    <td><Button id = "removeBtn">Delete</Button>
+        <Button id = "editBtn">Edit</Button></td></tr>
    
     
 </thead>
+<tbody class = "tbodyy"></tbody>
 </table>
+</body>
+</head>
 </html>
