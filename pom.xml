@@ -12,6 +12,7 @@
 	<artifactId>Tapawebapp-s19-server-java</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
+	<packaging>war</packaging>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
